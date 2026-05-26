@@ -195,7 +195,7 @@ body {
 
 .hero-content .hero-catch {
   color: var(--white);
-  text-shadow: none;
+  text-shadow: 2px 2px 6px #999999;
 }
 
 .hero-content-bottom-left .hero-cta {
