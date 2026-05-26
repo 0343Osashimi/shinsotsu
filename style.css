@@ -241,14 +241,14 @@ body {
 }
 
 .btn-primary {
-  background: #00A254;
+  background: #5cabb8;
   color: var(--white);
-  border: 2px solid #00A254;
+  border: 2px solid #5cabb8;
 }
 
 .btn-primary:hover {
-  background: #008a45;
-  border-color: #008a45;
+  background: #4a92a0;
+  border-color: #4a92a0;
   transform: translateY(-2px);
 }
 
@@ -379,11 +379,11 @@ body {
 
 
 /* ========================================
-   ② なぜこの事業をやるのか（Purpose）（ブルー背景）
+   ② なぜこの事業をやるのか（Purpose）
    ======================================== */
 .purpose {
   padding: var(--section-padding);
-  background: #00A254;
+  background: #5cabb8;
   color: #fff;
   border-radius: 60px 60px 0 0;
   overflow: hidden;
@@ -465,7 +465,7 @@ body {
 }
 
 /* ========================================
-   ③ 事業の現在地とこれから（Growth）（白背景・黒文字・ポイント青）
+   ③ 事業の現在地とこれから（Growth）
    ======================================== */
 .growth {
   padding: var(--section-padding);
@@ -486,7 +486,7 @@ body {
 }
 
 .growth .growth-number {
-  color: #00A254;
+  color: #5cabb8;
 }
 
 .growth .timeline-year,
@@ -496,15 +496,15 @@ body {
 }
 
 .growth .timeline-track::before {
-  background: #00A254;
+  background: #5cabb8;
 }
 
 .growth .timeline-item::before {
-  background: #00A254;
+  background: #5cabb8;
 }
 
 .growth .timeline-now {
-  background: #00A254;
+  background: #5cabb8;
   color: #fff;
 }
 
@@ -534,7 +534,7 @@ body {
   display: block;
   font-size: 2.5rem;
   font-weight: 900;
-  color: #00A254;
+  color: #5cabb8;
 }
 
 .timeline-track {
@@ -619,11 +619,11 @@ body {
 }
 
 /* ========================================
-   ④ 働く環境とポジション（Culture）（青背景・白文字）
+   ④ 働く環境とポジション（Culture）
    ======================================== */
 .environment {
   padding: var(--section-padding);
-  background: #00A254;
+  background: #5cabb8;
   color: #fff;
   border-radius: 60px 60px 0 0;
   overflow: hidden;
@@ -642,7 +642,7 @@ body {
 .environment .culture-card {
   background: var(--white);
   color: var(--near-black);
-  border: 2px solid #00A254;
+  border: 2px solid #5cabb8;
   border-left: none;
 }
 
@@ -765,7 +765,7 @@ body {
 .job-accordion-tag {
   font-size: 0.625rem;
   font-weight: 700;
-  background: #00A254;
+  background: #5cabb8;
   color: #fff;
   padding: 0.25rem 0.5rem;
   border-radius: 9999px;
@@ -919,14 +919,14 @@ body {
 }
 
 .final-cta .btn-primary {
-  background: #00A254;
+  background: #5cabb8;
   color: var(--white);
-  border-color: #00A254;
+  border-color: #5cabb8;
 }
 
 .final-cta .btn-primary:hover {
-  background: #008a45;
-  border-color: #008a45;
+  background: #4a92a0;
+  border-color: #4a92a0;
 }
 
 /* ========================================
@@ -1067,7 +1067,6 @@ body {
     min-width: auto;
   }
 
-  /* 下部固定CTA（スマホのみ追従） */
   .bottom-cta {
     display: flex;
     position: fixed;
@@ -1096,13 +1095,13 @@ body {
   }
 
   .bottom-cta-entry {
-    background: #00A254;
+    background: #5cabb8;
     color: #fff;
   }
 
   .bottom-cta-entry:hover,
   .bottom-cta-entry:active {
-    background: #008a45;
+    background: #4a92a0;
   }
 
   .bottom-cta-casual {
@@ -1120,7 +1119,6 @@ body {
     padding-bottom: calc(72px + env(safe-area-inset-bottom));
   }
 
-  /* Hero：SPでヘッダー→余白→画像→余白→キャッチの縦並び */
   .hero {
     display: flex;
     flex-direction: column;
@@ -1331,7 +1329,6 @@ body {
     padding: 0 0.75rem;
   }
 
-  /* タイムライン：SPでは縦並び */
   .timeline-track {
     flex-direction: column;
     gap: 1.5rem;
@@ -1374,13 +1371,11 @@ body {
     min-width: 0;
   }
 
-  /* タッチターゲット確保 */
   .job-accordion-header {
     min-height: 48px;
     padding: 1rem 1.25rem;
   }
 
-  /* Hero：SPで画像右寄せ・左角丸・キャッチ黒 */
   .hero-img-wrap {
     aspect-ratio: 3 / 2.8;
     min-height: 55vh;
