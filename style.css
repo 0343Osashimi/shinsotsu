@@ -213,7 +213,7 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
-  text-shadow: 2px 2px 3px #999999;
+  text-shadow: 20px 20px 30px #999999;
 }
 
 .hero-catch-bg {
