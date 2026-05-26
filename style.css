@@ -220,6 +220,7 @@ body {
   color: #fff;
   padding: 0;
   display: inline-block;
+  text-shadow: 2px 2px 6px #999999;
 }
 
 .hero-cta {
@@ -1395,6 +1396,7 @@ body {
   .hero-content .hero-catch,
   .hero-content .hero-catch-bg {
     color: #1d2923;
+    text-shadow: 2px 2px 6px #999999;
   }
 }
 
