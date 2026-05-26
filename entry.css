@@ -1,0 +1,340 @@
+/* ========================================
+   entry.css — エントリーページ専用スタイル
+   style.css を読み込んだ上で追加適用
+   ======================================== */
+
+/* ページ全体の上部余白（固定ヘッダー分） */
+.entry-page {
+  padding-bottom: 0;
+}
+
+/* ========================================
+   ヒーローセクション
+   ======================================== */
+.entry-hero {
+  padding-top: 72px; /* ヘッダー高さ分 */
+  background: #5cabb8;
+  color: #fff;
+  padding-bottom: 72px;
+}
+
+.entry-hero-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 5rem 1.5rem 3rem;
+}
+
+.entry-hero-eyebrow {
+  font-family: var(--font-en);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1rem;
+}
+
+.entry-hero-title {
+  font-family: var(--font-en), var(--font-ja);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.25rem;
+}
+
+.entry-hero-sub {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.8;
+}
+
+/* ========================================
+   メインコンテンツ
+   ======================================== */
+.entry-main {
+  background: var(--gray-50);
+}
+
+.entry-content {
+  padding: 5rem 0 6rem;
+}
+
+/* ========================================
+   STEPセクション
+   ======================================== */
+.entry-steps {
+  margin-bottom: 4rem;
+}
+
+.entry-steps-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+  color: var(--near-black);
+}
+
+.entry-steps-grid {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.entry-step-card {
+  flex: 1;
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entry-step-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.5rem;
+  font-size: 1.5rem;
+  color: #5cabb8;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+
+.entry-step-num {
+  font-family: var(--font-en);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #5cabb8;
+  line-height: 1;
+  opacity: 0.5;
+}
+
+.entry-step-title {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--near-black);
+  margin: 0;
+}
+
+.entry-step-text {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.entry-step-list {
+  list-style: none;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.entry-step-list li {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--near-black);
+  background: var(--gray-50);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+}
+
+/* ========================================
+   CTAブロック（LINE・メール）
+   ======================================== */
+.entry-cta-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.entry-cta-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.entry-cta-card--line {
+  border-top: 4px solid #06C755;
+}
+
+.entry-cta-card--mail {
+  border-top: 4px solid #5cabb8;
+}
+
+.entry-cta-card-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.entry-cta-card-title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--near-black);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.entry-cta-card-text {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* LINEボタン */
+.entry-line-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #06C755;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-start;
+}
+
+.entry-line-btn:hover {
+  background: #05a848;
+  transform: translateY(-2px);
+}
+
+/* メールボタン */
+.entry-mail-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #5cabb8;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s, transform 0.2s;
+  align-self: flex-start;
+  word-break: break-all;
+}
+
+.entry-mail-btn:hover {
+  background: #4a92a0;
+  transform: translateY(-2px);
+}
+
+.entry-cta-card-note {
+  font-size: 0.72rem;
+  color: var(--gray-500);
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  background: var(--gray-50);
+  border-radius: 6px;
+  border-left: 3px solid var(--gray-200);
+}
+
+/* ========================================
+   安心メッセージ
+   ======================================== */
+.entry-reassure {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  border-top: 4px solid #5cabb8;
+}
+
+.entry-reassure-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.entry-reassure-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--near-black);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.entry-reassure-text {
+  font-size: 0.9375rem;
+  color: var(--gray-500);
+  line-height: 2;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   ユーティリティ
+   ======================================== */
+.pc-only {
+  display: inline;
+}
+
+/* ========================================
+   レスポンシブ
+   ======================================== */
+@media (max-width: 767px) {
+  .entry-hero-inner {
+    padding: 4rem 1rem 2.5rem;
+  }
+
+  .entry-hero-sub .pc-only {
+    display: none;
+  }
+
+  .entry-content {
+    padding: 3rem 0 4rem;
+  }
+
+  .entry-steps-grid {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .entry-step-arrow {
+    transform: rotate(90deg);
+    padding: 0;
+    font-size: 1.25rem;
+    height: 1.5rem;
+  }
+
+  .entry-cta-block {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-cta-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .entry-reassure {
+    padding: 2rem 1.25rem;
+    text-align: left;
+  }
+
+  .entry-reassure-title {
+    font-size: 1.25rem;
+  }
+
+  .entry-reassure-text {
+    font-size: 0.875rem;
+  }
+
+  .pc-only {
+    display: none;
+  }
+}
