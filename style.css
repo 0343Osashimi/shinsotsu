@@ -206,10 +206,9 @@ body {
   font-size: clamp(2.5rem, 5.5vw, 92px);
   font-weight: 900;
   line-height: 1.2;
-  color: #fff;
+  color: var(--near-black);
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
-
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -221,13 +220,6 @@ body {
   color: #fff;
   padding: 0;
   display: inline-block;
-}
-
-.hero-cta {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: flex-start;
 }
 
 .hero-cta {
