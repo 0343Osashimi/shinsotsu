@@ -206,20 +206,43 @@ body {
   font-size: clamp(2.5rem, 5.5vw, 92px);
   font-weight: 900;
   line-height: 1.2;
-  color: var(--near-black);
+  color: #fff;
   letter-spacing: -0.02em;
   margin-bottom: 1.5rem;
+
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
+
+  /* フローティング感 */
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.18),
+    0 6px 24px rgba(0, 0, 0, 0.12),
+    0 0 18px rgba(255, 255, 255, 0.18);
+
+  position: relative;
+  z-index: 2;
 }
 
 .hero-catch-bg {
-  background: none;
+  background: rgba(255, 255, 255, 0.12);
+
+  /* ほんのりガラス感 */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
   color: #fff;
-  padding: 0;
+
+  padding: 0.12em 0.35em;
+  border-radius: 0.18em;
+
   display: inline-block;
+
+  /* 浮遊感 */
+  box-shadow:
+    0 4px 18px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
 }
 
 .hero-cta {
