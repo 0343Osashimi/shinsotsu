@@ -213,9 +213,6 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
-  text-shadow:
-    0 2px 4px rgba(120, 120, 120, 0.25),
-    0 6px 12px rgba(120, 120, 120, 0.18);
 }
 
 .hero-catch-bg {
