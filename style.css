@@ -414,6 +414,19 @@ body {
   align-items: stretch;
 }
 
+.purpose-intro {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.purpose-intro p {
+  font-size: 1rem;
+  line-height: 1.8;
+  font-weight: 600;
+  color: #fff;
+}
+
 .purpose-content {
   display: flex;
   flex-direction: column;
@@ -427,6 +440,7 @@ body {
   text-transform: uppercase;
   color: inherit;
   margin: 0;
+  margin-bottom: 1rem;
 }
 
 .purpose-block p {
@@ -1193,6 +1207,7 @@ body {
 
   .purpose-block h3 {
     font-size: 1.25rem;
+    margin-bottom: 0.75rem;
   }
 
   .purpose-block p {
@@ -1202,6 +1217,10 @@ body {
   .purpose-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+
+  .purpose-intro p {
+    font-size: 0.8rem;
   }
 
   .purpose-content {
